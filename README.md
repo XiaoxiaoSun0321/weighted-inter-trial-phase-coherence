@@ -45,5 +45,5 @@ Acknowledge and provide credit to any third-party libraries, resources, or contr
 
 ## Contact
 
-For any inquiries or questions, you can reach me at [xiaoxiao.sun@columbia.edu]. Connect with me on [LinkedIn](https://www.linkedin.com/in/yourprofile) for more updates and projects.
+For any inquiries or questions, you can reach me at [xiaoxiao.sun@columbia.edu]. Connect with me on [LinkedIn](https://www.linkedin.com/in/xiaoxiao-sun-b66012274/) for more updates and projects.
 
