@@ -23,7 +23,7 @@ No further installation needed. Function files are directly runnable in Matlab.
 
 ## Usage
 
-Provided function file 'itpc.m' and 'witpc.m' that calculates the inter-trial phase coherence and trial-weighted phase coherence from given EEG epoch. 
+Provided function file 'itpc.m' and 'witpc.m' that calculates the inter-trial phase coherence (itpc) and trial-weighted phase coherence (witpc) from given EEG epoch. 
 
 ## Features
 
