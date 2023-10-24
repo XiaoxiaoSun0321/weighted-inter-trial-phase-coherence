@@ -47,6 +47,8 @@ phase-locked closed-loop EEG-rTMS: https://www.sciencedirect.com/science/article
 
 Clinic outcomes: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4334289
 
+Predictive Biomarkers: https://www.medrxiv.org/content/10.1101/2023.10.09.23296751v1 
+
 ## Contact
 
 For any inquiries or questions, you can reach me at [xiaoxiao.sun@columbia.edu]. Connect with me on [LinkedIn](https://www.linkedin.com/in/xiaoxiao-sun-b66012274/) for more updates and projects.
