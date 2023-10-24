@@ -19,11 +19,11 @@ This approach of calculating ITPC was slightly modified from the standard approa
 
 ## Installation
 
-Provide step-by-step instructions on how to install and set up your project. Include any dependencies or prerequisites that need to be installed. You can include code snippets or commands for clarity.
+No further installation needed. Function files are directly runnable in Matlab. 
 
 ## Usage
 
-Explain how users can use your project and provide code examples or demonstrations to illustrate its functionality. Include instructions on how to run the code, use specific features, or configure settings.
+Provided function file 'itpc.m' and 'witpc.m' that calculates the inter-trial phase coherence and trial-weighted phase coherence from given EEG epoch. 
 
 ## Features
 
