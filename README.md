@@ -5,7 +5,7 @@
 
 We adjusted the calculation of ITPC with a power-based weighted average method to correct the trial weight by phase estimation accuracy, [Faller et al. (2022)](https://www.sciencedirect.com/science/article/pii/S1935861X22000365#bib49) has described the details of the weighted ITPC (wITPC) calculation .
 
-This approach of calculating ITPC was slightly modified from the standard approach introduced by [Diepen and Mazaheri (2018)](https://www.nature.com/articles/s41598-018-20423-z) to account for the power difference in phase estimation (usually, higher power makes more creditable phase prediction). This modification is very helpful in our study since we used a phase-locked system for TMS triggering, and it will be beneficial to other studies where the power difference matters (in many cases it does). 
+This approach of calculating ITPC was slightly modified from the standard approach introduced by [Diepen and Mazaheri (2018)](https://www.nature.com/articles/s41598-018-20423-z) to account for the power difference in phase estimation (usually, higher power makes more creditable phase prediction). This modification is very helpful in our study since we used a phase-locked system for TMS triggering, and it will be beneficial to other studies where the power difference or phase estimation matters (in many cases it does). 
 
 ## Table of Contents
 
@@ -23,7 +23,8 @@ No further installation needed. Function files are directly runnable in Matlab.
 
 ## Usage
 
-Provided function file 'itpc.m' and 'witpc.m' that calculates the inter-trial phase coherence (itpc) and trial-weighted phase coherence (witpc) from given EEG epoch. 
+- Provided function file 'itpc.m' and 'witpc.m' that calculates the inter-trial phase coherence (itpc) and trial-weighted phase coherence (witpc) from given EEG epoch. 
+- Provided function file 'trial_weight_power.m' and 'trial_weight_power_elec.m'
 
 ## Features
 
