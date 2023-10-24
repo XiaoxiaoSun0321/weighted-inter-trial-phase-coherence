@@ -28,9 +28,8 @@ No further installation needed. Function files are directly runnable in Matlab.
 
 ## Features
 
-- Feature 1: Description of feature 1.
-- Feature 2: Description of feature 2.
-- Feature 3: Description of feature 3.
+- Feature 1: Two different trial weight calculation methods are provided. (one is on a region-level, the other is on an electrode-level.)
+- Feature 2: Example is provided in [example_car_face.mlx](example_car_face.mlx). Example data is available in [example_data](example_data/) folder.
 
 ## Contributing
 
