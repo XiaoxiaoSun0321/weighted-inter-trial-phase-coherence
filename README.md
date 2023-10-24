@@ -3,7 +3,7 @@
 
 ## Description
 
-We adjusted the calculation of ITPC with a power-based weighted average method to correct the trial weight by phase estimation accuracy, Faller et al. (2022) has described the details of the weighted ITPC (wITPC) calculation [https://www.sciencedirect.com/science/article/pii/S1935861X22000365#bib49].
+We adjusted the calculation of ITPC with a power-based weighted average method to correct the trial weight by phase estimation accuracy, [Faller et al. (2022)](https://www.sciencedirect.com/science/article/pii/S1935861X22000365#bib49) has described the details of the weighted ITPC (wITPC) calculation .
 
 This approach of calculating ITPC was slightly modified from the standard approach introduced by Diepen and Mazaheri (2018) to account for the power difference in phase estimation (usually, higher power makes more creditable phase prediction) [https://www.nature.com/articles/s41598-018-20423-z]. 
 
