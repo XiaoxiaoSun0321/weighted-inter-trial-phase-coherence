@@ -12,7 +12,6 @@ This approach of calculating ITPC was slightly modified from the standard approa
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
 - [License](#license)
 - [Credits](#credits)
 - [Contact](#contact)
@@ -31,19 +30,23 @@ No further installation needed. Function files are directly runnable in Matlab.
 - Feature 1: Two different trial weight calculation methods are provided. (one is on a region-level, the other is on an electrode-level.)
 - Feature 2: Example is provided in [example_car_face.mlx](example_car_face.mlx). Example data is available in [example_data](example_data/) folder.
 
-## Contributing
-
-We welcome contributions from the community! If you would like to contribute to the project, please follow the guidelines in this section. Include instructions on how to submit bug reports, feature requests, and pull requests. You can also mention any coding conventions or branch naming conventions to be followed.
-
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Refer to the [LICENSE](LICENSE) file for more information.
 
 ## Credits
 
-Acknowledge and provide credit to any third-party libraries, resources, or contributors that have been instrumental in the development of your project. Provide links to their repositories or websites.
+This constitutes a segment of our branch's efforts within the closed-loop neuromodulation project. For a more comprehensive background, I encourage you to review our series of publications.
+
+
+simultaneous fMRI-EEG-TMS: https://www.sciencedirect.com/science/article/pii/S1935861X23017746
+
+
+phase-locked closed-loop EEG-rTMS: https://www.sciencedirect.com/science/article/pii/S1935861X22000365
+
+
+Clinic outcomes: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4334289
 
 ## Contact
 
 For any inquiries or questions, you can reach me at [xiaoxiao.sun@columbia.edu]. Connect with me on [LinkedIn](https://www.linkedin.com/in/xiaoxiao-sun-b66012274/) for more updates and projects.
-
