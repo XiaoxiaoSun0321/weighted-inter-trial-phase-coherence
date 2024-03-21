@@ -18,7 +18,7 @@ This approach of calculating ITPC was slightly modified from the standard approa
 
 ## Installation
 
-No further installation needed. Function files are directly runnable in Matlab. 
+No further installation needed. Function files are directly runnable in Matlab (any version from Matlab 2022b). 
 
 ## Usage
 
