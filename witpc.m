@@ -1,4 +1,4 @@
-function witpc_time = witpc(trial_weights,eeg_data,elec_used)
+function [witpc_time,witpc_phase] = witpc(trial_weights,eeg_data,elec_used)
 % function witpc calculates the trail-weighted inter-trial phase coherence 
 % for a given data.
 
@@ -22,18 +22,26 @@ channel_num = size(eeg_data,1);
         disp('No ROI specified, so all electrodes will be used.')
     end
 
-% Obtain hilbert transform of the ROI
-eeg_angles = angle(hilbert(eeg_data(elec_used,:,:)));
+clear eeg_angles euler_complex temp_phase
+for ix_elec = 1:length(elec_used)
+    % Obtain hilbert transform of the ROI
+    eeg_angles(ix_elec,:,:) = angle(hilbert(eeg_data(ix_elec,:,:)));
+    % Apply Euler's formula
+    euler_complex(ix_elec,:,:) = exp(1i*eeg_angles(ix_elec,:,:));
+end
 
-% Apply Euler's formula
-euler_complex = exp(1i*eeg_angles);
 
 if size(trial_weights,2)==1
     % Average across electrodes 
-    avg_roi_complex = mean(euler_complex,1);
+    %avg_roi_complex = mean(euler_complex,1);
     % Trial-weighted average across trials, trial_weights is region average
-    witpc_time = abs(squeeze(avg_roi_complex)*trial_weights);
-    disp('The given trial weights are region-level average(or include only 1 electrodes).');
+    %witpc_time = abs(squeeze(avg_roi_complex)*trial_weights);
+    %witpc_phase = angle(squeeze(avg_roi_complex)*trial_weights);
+    
+    %calculate wITPC for each electrode, then calculate the wITPC average
+    witpc_time = mean(abs(temp_phase),1);
+    witpc_phase = circ_mean(angle(temp_phase));
+    %disp('The given trial weights are region-level average(or include only 1 electrodes).');
 end
 
 
@@ -50,4 +58,3 @@ end
 
 
 end
-
