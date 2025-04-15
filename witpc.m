@@ -1,4 +1,4 @@
-function [witpc_time,witpc_phase] = witpc(trial_weights,eeg_data,elec_used)
+function [witpc_time,witpc_phase,temp_phase] = witpc(trial_weights,eeg_data,elec_used)
 % function witpc calculates the trail-weighted inter-trial phase coherence 
 % for a given data.
 
@@ -28,6 +28,8 @@ for ix_elec = 1:length(elec_used)
     eeg_angles(ix_elec,:,:) = angle(hilbert(eeg_data(ix_elec,:,:)));
     % Apply Euler's formula
     euler_complex(ix_elec,:,:) = exp(1i*eeg_angles(ix_elec,:,:));
+    % Add the weighted factor
+    temp_phase(ix_elec,:) = squeeze(euler_complex(ix_elec,:,:))*trial_weights; %[timepoint*trial] * [trial*1]
 end
 
 
@@ -58,3 +60,4 @@ end
 
 
 end
+
